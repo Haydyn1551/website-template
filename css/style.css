@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/nunito-sans-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Bold';
+    src: url('/fonts/nunito-sans-latin-700-normal.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+  }
+
+  body {
+    background: url('/background.png') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .bold {
+    font-family: 'Nunito Sans Bold';
+    font-weight: bolder;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+    display: flex;
+    font-size: 28px;
+    align-items: center;  /* Vertically center items */
+  }
+
+  .logo span {
+    color: white;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: white;
+    color: black;
+  }
+
+  .hero {
+    animation: fadeIn2 0.8s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .hero .btn {
+    animation: fadeIn2 2s ease forwards;
+    transition: .5s;
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .hero .btn:hover {
+    transition: .5s;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+#hoverBtn2 {
+    animation: fadeIn2 0.8s ease forwards;
+    transition: .5s;
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+#hoverBtn2:hover {
+    transition: .5s;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    font-size: 64px;
+}
+
+#features {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 120px;
+}
+
+#features .title {
+    font-size: 30px;
+}
+
+#features .description {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.descriptions p {
+    width: 400px;
+}
+
+.description {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    /*background-color: white;*/
+    background: white;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 5px;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+
+.downloadToday {
+    height: 300px;
+    width: 100%;
+    background-color: #304559;
+    font-family: 'Nunito Sans Bold';
+    padding: 24px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.bottomBar {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+
+.bottom-container {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 0px;
+}
+
+#title {
+    font-size: 24px;
+}
+
+.logoAndName {
+    display: flex;
+    align-items: center;  /* Vertically center items */
+    justify-content: center;  /* Horizontally center items (optional) */
+    text-align: center;
+    margin: auto;
+}
+
+.clientDescription {
+    width: 400px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn2 {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.bottomBar button {
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}

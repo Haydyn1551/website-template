@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(Website Name) | Short description</title>
+    <link rel="icon" href="logo.png">
+    <meta name="description" content="(Website Name) | Slogan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header id="top-nav">
+        <div class="logo">
+            <img src="logo.png" height="75" width="75">
+            <span class="bold">Website</span> Name
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="news.html">News</a></li>
+				<li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="logo.png" id="heroIMG" height="200" width="200">
+        <h1>Website Name</h1>
+        <p>Short description about the website</p>
+        <a id="hoverBtn" class="btn">DOWNLOAD FOR...</a>
+        <div class="popup" id="popup">Download like to game/anything needed to be downloaded</div>
+    </section>
+    <div id="features">
+        <div class="feature">
+            <i class="fa-solid fa-gauge"></i>
+            <p class="title">Feature 1</p>
+            <p class="description">Description 1</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-file-import"></i>
+            <p class="title">Feature 2</p>
+            <p class="description">Description 2</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-headset"></i>
+            <p class="title">Feature 3</p>
+            <p class="description">Description 3</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br> 
+    <div class="downloadToday">
+        <div class="download">
+            <h1 class="downloadTitle">SLOGAN</h1>
+            <br>
+            <a href="#top-nav" id="hoverBtn2" class="btn">DOWNLOAD</a>
+            <div class="popup" id="popup">Your website download/game download</div>
+        </div>
+    </div>
+    <div class="bottomBar">
+        <br>
+        <br>
+        <div class="bottom-container">
+            <p class="clientDescription">Short summary about your website/company</p>
+            <div class="logoAndName">
+                <img src="logo.png" height="75" width="75">
+                <p id="title"><span class="bold">Website</span> Name<p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <button id="hoverBtn2" onclick="openUrl('terms.html')">TERMS</button>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

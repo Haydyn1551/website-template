@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/nunito-sans-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Bold';
+    src: url('/fonts/nunito-sans-latin-700-normal.woff2') format('woff2');
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+  }
+
+  body {
+    background: url('/background.png') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+    display: flex;
+    font-size: 28px;
+    align-items: center;  /* Vertically center items */
+  }
+
+  .logo span {
+    color: white;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: white;
+    color: black;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .hero .btn {
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .hero .btn:hover {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+.news {
+    animation: fadeIn 0.8s ease forwards;
+    margin-left: 120px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+.bold {
+    font-family: 'Nunito Sans Bold';
+    font-weight: bolder;
+}
